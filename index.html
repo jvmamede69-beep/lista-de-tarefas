@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Tarefas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <h1>Lista de Tarefas</h1>
+    <p class="contador" id="contador">Nenhuma tarefa ainda</p>
+
+    <form id="formulario">
+      <input type="text" id="entrada" placeholder="O que você precisa fazer?" maxlength="100" autocomplete="off" required>
+      <button type="submit">Adicionar</button>
+    </form>
+
+    <div class="filtros">
+      <button class="filtro ativo" data-filtro="todas">Todas</button>
+      <button class="filtro" data-filtro="pendentes">Pendentes</button>
+      <button class="filtro" data-filtro="concluidas">Concluídas</button>
+    </div>
+
+    <ul id="lista"></ul>
+
+    <button id="limpar" class="limpar">Limpar concluídas</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
